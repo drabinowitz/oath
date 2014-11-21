@@ -99,6 +99,14 @@ describe('oath', function () {
     });
   });
 
+/*var promiseTimeout = function (func, time) {
+  var defer = oath.defer();
+  setTimeout(function () {
+    defer.resolve(func());
+  }, time);
+  return defer.promise;
+};*/
+
   describe('chaining', function () {
     it('should allow you to chain promises using then', function (done) {
       var step1 = function (num) {
